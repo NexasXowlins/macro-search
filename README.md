@@ -11,3 +11,5 @@ Currently returns the first match because of searching by macro name. So ensure 
 
 
 The settings page is built like libWrapper's setting page, and should be multiselect to move the compendiums from include to exclude. 
+
+![image](https://user-images.githubusercontent.com/17209698/163699188-a8351dc3-4f4e-487c-b59b-915d80e4a5e6.png)
