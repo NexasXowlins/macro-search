@@ -1,0 +1,51 @@
+{
+	"macroSearch": {
+		"settings": {
+			"yes": "Yes",
+			"no": "No",
+			"save": "Save",
+
+
+			"menu": {
+				"title": "Macro Search Settings Menu",
+				"name": "Compendiums",
+				"packs": {
+					"name": "Compendiums",
+					"package-inactive": "Inactive",
+					"exclude": {
+						"title": "Excluded Packs",
+						"hint": "These compendiums will be excluded from the macro search. \nMoving an item to this excluded list will cause the macro search to skip the compendium if a macro isn't found in game macros."
+					},
+					"include": {
+						"title": "Included Packs",
+						"hint": "These compendiumns will be included in the macro search.\nMoving an item to this included list will cause the macro search to check the compendium if a macro isn't found in the game macros."
+					}
+
+				},
+
+				"about": {
+					"name": "About",
+					"full-name": "About macroSearch",
+					"credits": "{name} {version} by {author}.",
+					"credits-translation": "",
+
+					"description": "'macroSearch' is a module that hooks into the game.macros.getName() and refines it to search across specified compendiums for macros.",
+					"info": "You can find more information about this module in the <a href=\"{repo_url}\">Foundry VTT package repository</a>, as well as the project's <a href=\"{github_url}\">Github page</a>.",
+					"support": "<b>If you encounter any issues</b>, the easiest way to find support is to ask the community. The largest community-provided support channels are:"
+				},
+				"warning-save": "Do you wish to reload foundry with updates?"
+			}
+		}
+
+	},
+
+	"support-channels": [{
+			"title": "FoundryVTT Discord's #modules-troubleshooting channel",
+			"url": "https://discord.gg/foundryvtt"
+		},
+		{
+			"title": "FoundryVTT Reddit",
+			"url": "https://www.reddit.com/r/FoundryVTT"
+		}
+	]
+}

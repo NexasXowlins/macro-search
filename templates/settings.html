@@ -1,0 +1,55 @@
+<!-- 
+	Html representation for the settings configuration menu. This mirrors the lib-wrapper settings menu.
+	With multi select enabled. 
+-->
+<form class="{{classes}} macroSearch" autocomplete="off">
+	<nav class="sheet-tabs tabs">
+		<a class='item' data-tab='Compendium Search'>{{localize 'macroSearch.settings.menu.name'}}</a>
+		<a class='item' data-tab='About'>{{localize 'macroSearch.settings.menu.about.name'}}</a>
+	</nav>
+
+	<section class='tab' data-tab='Compendium Search'>
+		<h1>{{localize 'macroSearch.settings.menu.packs.name'}}</h1>
+		<div class="packs-search-group">
+			<div class="form-group" style="width: 90%; float:left">
+				<label for="packs-exclude">{{localize 'macroSearch.settings.menu.packs.exclude.title'}}
+					<p class="notes">{{localize 'macroSearch.settings.menu.packs.exclude.hint'}}</p>
+				</label>
+				<select name="packs-exclude" class="packs-exclude" size="8">
+					{{#if packs.exclude}}
+					{{#each packs.exclude}}
+						<option value="{{this}}">{{this}})</option>
+					{{/each}}
+					{{/if}}
+				</select>
+			</div>
+			<div class="arrow-btn-group" style="width: 10%">
+				<button type="button" style="width:50%" class="change-category" data-from="packs-include" data-to="packs-exclude">&uarr;</button>
+				<button type="button" style="width:50%" class="change-category" data-from="packs-exclude" data-to="packs-include">&darr;</button>
+			</div>
+		</div>
+		<div class="packs-search-group">
+			<div class="form-group" style="width: 90%">
+				<label for="packs-include">{{localize 'macroSearch.settings.menu.packs.include.title'}}
+					<p class="notes">{{localize 'macroSearch.settings.menu.packs.include.hint'}}</p>
+				</label>
+				<select name="packs-include" class="packs-include" size="8" multiple>
+					{{#if packs.include}}
+					{{#each packs.include}}
+						<option value="{{this}}">{{this}}</option>
+					{{/each}}
+					{{/if}}
+				</select>
+			</div>
+		</div>
+		<div style="margin: auto; width: 50%; padding-top: 60px">
+			<button type="button" class='submit' style="width:30%">{{localize 'macroSearch.settings.save'}}</button>
+		</div>
+	</section>
+	
+	<section class='tab' data-tab='About'>
+		<h1>test</h1>
+		<p>test</p>
+	</section>
+	
+</form>

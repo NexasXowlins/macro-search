@@ -1,0 +1,28 @@
+{
+  "name": "macroSearch",
+  "title": "Macro Search - Find that Macro anywhere",
+  "description": "A module to find a macro not only in game macros, but in packs",
+  "author": "NexasXowlins",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.9.0",
+  "dependencies" : [
+		{
+			"name": "dae",
+			"manifest": "https://gitlab.com/tposney/dae/raw/master/package/module.json"
+		}
+	],
+  "system":["dnd5e"],
+  "esmodules": [
+		"./scripts/macroSearch.js"
+	],
+  "styles" : [
+		"./css/macroSearch.css"
+	],
+  "languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "./lang/en.json"
+		}
+	]
+}
