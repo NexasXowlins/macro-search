@@ -5,10 +5,11 @@
   "author": "NexasXowlins",
   "version": "1.0.0",
   "minimumCoreVersion": "0.9.0",
+  "compatibleCoreVersion": "0.9.0",
   "dependencies" : [
 		{
-			"name": "dae",
-			"manifest": "https://gitlab.com/tposney/dae/raw/master/package/module.json"
+			"name": "libWrapper",
+			"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/blob/master/module.json"
 		}
 	],
   "system":["dnd5e"],

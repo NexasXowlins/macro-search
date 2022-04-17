@@ -97,7 +97,7 @@ export class MacroSearchSettings extends FormApplication {
 				if(cfg_exclude.includes(value) )
 					return;
 
-				ret.includes.push(value);
+				ret.include.push(value);
 			});
 			ret.include.sort((a,b) => a.localeCompare(b));
 		}

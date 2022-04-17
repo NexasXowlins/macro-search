@@ -1,7 +1,3 @@
-<!-- 
-	Html representation for the settings configuration menu. This mirrors the lib-wrapper settings menu.
-	With multi select enabled. 
--->
 <form class="{{classes}} macroSearch" autocomplete="off">
 	<nav class="sheet-tabs tabs">
 		<a class='item' data-tab='Compendium Search'>{{localize 'macroSearch.settings.menu.name'}}</a>
@@ -48,8 +44,24 @@
 	</section>
 	
 	<section class='tab' data-tab='About'>
-		<h1>test</h1>
-		<p>test</p>
+		<h1>{{localize 'macroSearch.settings.menu.about.full-name'}}</h1>
+		<p style="text-align: center"><b>{{localize 'macroSearch.settings.menu.about.credits' name=about.name version=about.version author='NexasXowlins'}}</b>
+		</p>
+
+		<p>{{localize 'macroSearch.settings.menu.about.description'}}</p>
+		<p>{{{localize 'macroSearch.settings.menu.about.info' repo_url='' github_url='https://github.com/NexasXowlins/macroSearch/'}}}</p>
+
+		{{#if about.support}}
+			<p>{{{localize 'macroSearch.settings.menu.about.support'}}}</p>
+			<ul>
+				{{#each about.support}}
+					<li>
+						<a href="{{this.url}}">{{this.title}}</a>
+					</li>
+				{{/each}}
+			</ul>
+		{{/if}}
+		<p>{{{localize 'macroSearch.settings.menu.about.issue-tracker' issues_url='https://github.com/NexasXowlins/macroSearch/issues'}}}</p>
 	</section>
 	
 </form>
