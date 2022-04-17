@@ -2,7 +2,7 @@ import {PACKAGE_ID} from './consts.js'
 import { MacroCompendiumTuple } from './tuple.js';
 
 export function hookEventMacrosGetName() {
-	libWrapper.register("macroSearch", 'game.macros.getName', macroCompendiumSearch, "WRAPPER");
+	libWrapper.register("macro-search", 'game.macros.getName', macroCompendiumSearch, "WRAPPER");
 }
 
 async function macroCompendiumSearch(wrapper, macroName, options, ...rest) {
